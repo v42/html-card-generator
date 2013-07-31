@@ -1,0 +1,64 @@
+body{
+	font: 22px Helvetica, Arial;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+textarea {
+	width: 660px;
+	height: 200px;
+	clear: both;
+	font: 16px/16px 'Helvetica, Arial';
+	margin: 0 300px 20px 0;
+	resize: none;
+	overflow-x: hidden;
+}
+#cards-list {
+	display: block;
+	margin-left: -10px;
+	width: 600px;
+	list-style-type: none;
+}
+#cards-list li {
+	float: left;
+	margin: 0 0 10px 10px;
+	width: 190px;
+	height: 250px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+#cards-list p {
+	display: inline-block;
+	width: 150px;
+	vertical-align: middle;
+	margin: 0;
+}
+#cards-list li:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 228px;
+}
+#pseudo-form {
+	padding-bottom: 20px;
+}
+@media print {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	h1, #pseudo-form {
+		display: none;
+	}
+}
